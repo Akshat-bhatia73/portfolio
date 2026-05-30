@@ -15,8 +15,8 @@ coverage/
 .env.*
 !.env.example
 
-# Local planning notes
-docs/plans/
+# Local docs and planning notes
+docs/
 
 # Logs
 *.log
