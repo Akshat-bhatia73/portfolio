@@ -8,14 +8,22 @@ export function Skills() {
 
   return (
     <motion.section id="skills" className="py-20" initial={reduceMotion ? false : "hidden"} whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={sectionVariants}>
-      <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
-        <h2 className="text-[clamp(2.25rem,6vw,4.625rem)] font-black leading-[0.9]">Skills</h2>
-        <p className="text-lg leading-8 text-[var(--color-muted)]">{skills.map((group) => group.category).join(" / ")}</p>
+      <div className="section-grid items-end">
+        <div>
+          <p className="font-mono text-xs uppercase text-[var(--color-muted)]">03 / Skills</p>
+          <h2 className="mt-3 text-[clamp(2.5rem,6vw,5rem)] font-medium leading-none">Skills</h2>
+        </div>
+        <p className="font-mono text-sm uppercase leading-7 text-[var(--color-muted)]">{skills.map((group) => group.category).join(" / ")}</p>
       </div>
-      <div className="mt-8 grid gap-5 md:grid-cols-2">
-        {skills.map((group) => (
-          <motion.article className="border border-[var(--color-line)] bg-[var(--color-panel)] p-5 [border-radius:18px]" key={group.category} variants={itemVariants}>
-            <h3 className="font-mono text-sm text-[var(--color-accent-blue)]">{group.category}</h3>
+      <div className="mt-12 grid gap-4 md:grid-cols-2">
+        {skills.map((group, index) => (
+          <motion.article
+            className={index === 0 ? "shine-surface glass-shell interactive-card rounded-2xl p-5" : "shine-surface interactive-card rounded-2xl border border-[var(--color-line)] bg-[var(--color-panel)] p-5"}
+            key={group.category}
+            variants={itemVariants}
+            whileHover={{ y: -4, scale: 1.01 }}
+          >
+            <h3 className="font-mono text-xs uppercase text-[var(--accent-red)]">{group.category}</h3>
             <div className="mt-5 flex flex-wrap gap-2">
               {group.skills.map((skill) => (
                 <SkillPill key={skill} label={skill} />

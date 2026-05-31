@@ -5,7 +5,7 @@
 I build compliance platforms, agentic systems, and data pipelines that ship fast and scale cleanly.
 
 Faridabad, HR, India  
-[Email](mailto:akuaka46@gmail.com) · [LinkedIn](https://linkedin.com/in/akshat-bhatia) · [GitHub](https://github.com/akshat-bhatia)
+[Email](mailto:akuaka46@gmail.com) · [LinkedIn](https://www.linkedin.com/in/akshat-bhatia-) · [GitHub](https://github.com/Akshat-bhatia73) · [Book a Call](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3OwJq6ayGU7LfpBvYUZh2sB9t9CbqYOC1BTmnt59XClhVkRt4hpNj887bzDC472QyiH-dHw4Ah)
 
 ## Impact
 

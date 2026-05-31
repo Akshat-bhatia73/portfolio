@@ -27,12 +27,13 @@ export function StatCard({ stat }: { stat: Stat }) {
     <motion.article
       ref={ref}
       variants={itemVariants}
-      className="min-h-48 border border-[var(--color-line)] bg-[var(--color-panel-deep)] p-5 [border-radius:18px]"
+      className="shine-surface interactive-card min-h-48 border border-[var(--color-line)] bg-[var(--color-panel-deep)] p-5 [border-radius:16px]"
+      whileHover={{ y: -4, scale: 1.012 }}
     >
-      <div className="font-mono text-[clamp(2.125rem,5vw,3.5rem)] leading-none text-[var(--color-accent-orange)]">
+      <div className="font-mono text-[clamp(2.125rem,5vw,3.5rem)] leading-none text-[var(--accent-red)]">
         {display}
       </div>
-      <h3 className="mt-4 text-lg font-extrabold text-[var(--color-ink)]">{stat.label}</h3>
+      <h3 className="mt-4 text-lg font-medium text-[var(--color-ink)]">{stat.label}</h3>
       <p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">{stat.sublabel}</p>
     </motion.article>
   );

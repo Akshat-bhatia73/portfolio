@@ -10,6 +10,7 @@ export interface PersonalInfo {
   linkedin: string;
   github: string;
   resumePdfUrl: string;
+  bookCallUrl: string;
 }
 
 export interface Stat {
@@ -72,9 +73,11 @@ export const personal: PersonalInfo = {
     "I build compliance platforms, agentic systems, and data pipelines that ship fast and scale cleanly.",
   location: "Faridabad, HR, India",
   email: "akuaka46@gmail.com",
-  linkedin: "https://linkedin.com/in/akshat-bhatia", // TODO: confirm exact slug
-  github: "https://github.com/akshat-bhatia", // TODO: confirm exact slug
+  linkedin: "https://www.linkedin.com/in/akshat-bhatia-",
+  github: "https://github.com/Akshat-bhatia73",
   resumePdfUrl: "/Akshat_Bhatia_Resume.pdf", // TODO: host and replace
+  bookCallUrl:
+    "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3OwJq6ayGU7LfpBvYUZh2sB9t9CbqYOC1BTmnt59XClhVkRt4hpNj887bzDC472QyiH-dHw4Ah",
 };
 
 export const stats: Stat[] = [
@@ -123,18 +126,15 @@ export const experience: Experience[] = [
     showDates: true,
     bullets: [
       {
-        text:
-          "Built the entire frontend from scratch with Next.js, TypeScript, and Tailwind CSS, delivering role-based dashboards and regulatory workflows that enabled compliance teams to process cases 30% faster.",
+        text: "Built the entire frontend from scratch with Next.js, TypeScript, and Tailwind CSS, delivering role-based dashboards and regulatory workflows that enabled compliance teams to process cases 30% faster.",
         metric: "30% faster",
       },
       {
-        text:
-          "Optimized analytics APIs on 300k+ MongoDB records via multi-stage aggregation pipelines — cutting dashboard response times from 4.5–6 min to 15–30 sec (up to 30× improvement).",
+        text: "Optimized analytics APIs on 300k+ MongoDB records via multi-stage aggregation pipelines — cutting dashboard response times from 4.5–6 min to 15–30 sec (up to 30× improvement).",
         metric: "30× improvement",
       },
       {
-        text:
-          "Migrated AI agent architecture to a Deep Agents framework with skill-based routing, reducing deployment time by 70% and consolidating 47 specialized tools into 8 reusable sub-agents.",
+        text: "Migrated AI agent architecture to a Deep Agents framework with skill-based routing, reducing deployment time by 70% and consolidating 47 specialized tools into 8 reusable sub-agents.",
         metric: "70% faster deployment",
       },
       {
@@ -153,17 +153,14 @@ export const experience: Experience[] = [
     showDates: true,
     bullets: [
       {
-        text:
-          "Built FastAPI + Python pipelines that extracted structured financial data from PDFs using computer-vision and NLP models, enabling automated research document analysis.",
+        text: "Built FastAPI + Python pipelines that extracted structured financial data from PDFs using computer-vision and NLP models, enabling automated research document analysis.",
       },
       {
-        text:
-          "Improved LinkedIn profile validation accuracy from ~20% to 90%+ by developing rule-based and ML-assisted validation logic.",
+        text: "Improved LinkedIn profile validation accuracy from ~20% to 90%+ by developing rule-based and ML-assisted validation logic.",
         metric: "~20% → 90%+",
       },
       {
-        text:
-          "Fine-tuned Meta LLaMA-3 models for internal AI automation workflows; built DOCX and PPTX report generation pipelines from structured JSON inputs.",
+        text: "Fine-tuned Meta LLaMA-3 models for internal AI automation workflows; built DOCX and PPTX report generation pipelines from structured JSON inputs.",
       },
     ],
   },
@@ -181,21 +178,17 @@ export const consulting: Experience[] = [
     badge: "Consulting",
     bullets: [
       {
-        text:
-          "Co-built a production-ready AI agent compliance validation platform MVP in 10 days — covering regulation ingestion, reviewer workflows, real-time violation surfacing, and PDF audit reporting.",
+        text: "Co-built a production-ready AI agent compliance validation platform MVP in 10 days — covering regulation ingestion, reviewer workflows, real-time violation surfacing, and PDF audit reporting.",
         metric: "10 days",
       },
       {
-        text:
-          "Architected a multi-stage regulation ingestion pipeline: Mistral OCR → section reconstruction → GPT semantic chunking → knowledge-graph triple/ENM extraction → Qdrant vector indexing. Constrained LLM usage to ingestion and report generation only, keeping runtime evaluation deterministic and sub-second.",
+        text: "Architected a multi-stage regulation ingestion pipeline: Mistral OCR → section reconstruction → GPT semantic chunking → knowledge-graph triple/ENM extraction → Qdrant vector indexing. Constrained LLM usage to ingestion and report generation only, keeping runtime evaluation deterministic and sub-second.",
       },
       {
-        text:
-          "Built the FastAPI REST + WebSocket API layer: session management, turn ingestion, real-time flag streaming before each agent reply, and SHA-256 hashed PDF audit reports via WeasyPrint. Containerized the full stack with Docker Compose.",
+        text: "Built the FastAPI REST + WebSocket API layer: session management, turn ingestion, real-time flag streaming before each agent reply, and SHA-256 hashed PDF audit reports via WeasyPrint. Containerized the full stack with Docker Compose.",
       },
       {
-        text:
-          "Delivered React + TypeScript reviewer dashboards: per-turn flag triage with cited regulatory evidence, violation annotation, transcript replay, and one-click audit export.",
+        text: "Delivered React + TypeScript reviewer dashboards: per-turn flag triage with cited regulatory evidence, violation annotation, transcript replay, and one-click audit export.",
       },
     ],
     highlights: [
@@ -223,7 +216,14 @@ export const projects: Project[] = [
     name: "AI Compliance Platform",
     description:
       "Real-time compliance validation system for AI agent conversations. Detects regulatory violations turn-by-turn and surfaces corrective guidance before the agent's next reply.",
-    techStack: ["FastAPI", "React", "TypeScript", "Qdrant", "WebSocket", "Docker"],
+    techStack: [
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Qdrant",
+      "WebSocket",
+      "Docker",
+    ],
     metric: "Full MVP in 10 days",
     liveUrl: null,
     githubUrl: null,
