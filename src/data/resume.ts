@@ -72,10 +72,10 @@ export const personal: PersonalInfo = {
   tagline:
     "I build compliance platforms, agentic systems, and data pipelines that ship fast and scale cleanly.",
   location: "Faridabad, HR, India",
-  email: "akuaka46@gmail.com",
+  email: "hi@akshat-bhatia.com",
   linkedin: "https://www.linkedin.com/in/akshat-bhatia-",
   github: "https://github.com/Akshat-bhatia73",
-  resumePdfUrl: "/Akshat_Bhatia_Resume.pdf", // TODO: host and replace
+  resumePdfUrl: "/Akshat_Bhatia_Resume.pdf",
   bookCallUrl:
     "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3OwJq6ayGU7LfpBvYUZh2sB9t9CbqYOC1BTmnt59XClhVkRt4hpNj887bzDC472QyiH-dHw4Ah",
 };
