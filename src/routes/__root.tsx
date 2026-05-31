@@ -10,15 +10,35 @@ export const Route = createRootRoute({
       { title: `${personal.name} | ${personal.title}` },
       { name: "description", content: personal.tagline },
     ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Doto:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap",
+      },
+    ],
   }),
   component: RootDocument,
 });
 
+const themeScript = `
+(() => {
+  const saved = localStorage.getItem("theme");
+  const theme = saved === "light" || saved === "dark"
+    ? saved
+    : (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+  document.documentElement.dataset.theme = theme;
+})();
+`;
+
 function RootDocument() {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body>
         <Outlet />
