@@ -5,6 +5,7 @@ export interface PersonalInfo {
   name: string;
   title: string;
   tagline: string;
+  about: string;
   location: string;
   email: string;
   linkedin: string;
@@ -70,7 +71,8 @@ export const personal: PersonalInfo = {
   name: "Akshat Bhatia",
   title: "Full Stack & AI Engineer",
   tagline:
-    "I build compliance platforms, agentic systems, and data pipelines that ship fast and scale cleanly.",
+    "Building scalable AI systems, high-performance backend infrastructure, and modern full-stack products for fast-moving startups and real-world users.",
+  about: `I’m a full-stack and AI engineer passionate about building products that are both technically strong and practical in the real world. My experience includes developing production AI systems, scalable backend infrastructure, data-intensive platforms, and fast-moving startup products. I enjoy working on challenging engineering problems — from designing intelligent workflows and optimizing system performance to shipping products quickly without compromising scalability or user experience.`,
   location: "Faridabad, HR, India",
   email: "hi@akshat-bhatia.com",
   linkedin: "https://www.linkedin.com/in/akshat-bhatia-",
