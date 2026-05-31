@@ -22,7 +22,7 @@ export function ProjectCard({ project, featured = false }: { project: Project; f
           </span>
           <div className="flex gap-2">
             {project.liveUrl ? (
-              <a aria-label={`${project.name} live site`} className="rounded-full p-2 transition-colors hover:bg-[var(--accent-red)] hover:text-white" href={project.liveUrl} rel="noreferrer" target="_blank">
+              <a aria-label={`${project.name} live site`} className="rounded-full p-2 transition-colors hover:bg-[var(--accent-red)] hover:text-white" href={project.liveUrl}>
                 <ExternalLink size={18} />
               </a>
             ) : null}
@@ -33,7 +33,15 @@ export function ProjectCard({ project, featured = false }: { project: Project; f
             ) : null}
           </div>
         </div>
-        <h3 className="text-[clamp(1.875rem,4vw,3rem)] font-medium leading-[0.98]">{project.name}</h3>
+        <h3 className="text-[clamp(1.875rem,4vw,3rem)] font-medium leading-[0.98]">
+          {project.liveUrl ? (
+            <a className="transition-colors hover:text-[var(--accent-red)]" href={project.liveUrl}>
+              {project.name}
+            </a>
+          ) : (
+            project.name
+          )}
+        </h3>
         <p className="mt-5 text-base leading-7 opacity-80">{project.description}</p>
       </div>
       <div>

@@ -209,7 +209,7 @@ export const projects: Project[] = [
     techStack: ["TanStack Start", "TypeScript", "Convex", "Gemini Flash"],
     metric: "~60% less server-side code",
     liveUrl: "https://lexiking.akshat-bhatia.com",
-    githubUrl: null, // TODO: add if public
+    githubUrl: "https://github.com/Akshat-bhatia73/lexiking",
     isConfidential: false,
   },
   {
