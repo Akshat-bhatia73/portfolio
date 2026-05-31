@@ -63,7 +63,7 @@ export function Contact() {
             </a>
           ))}
           <button
-            className="mechanical-button"
+            className="mechanical-button cursor-pointer"
             onClick={() => {
               void handleCopy();
             }}
