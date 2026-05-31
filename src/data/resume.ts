@@ -71,8 +71,10 @@ export const personal: PersonalInfo = {
   name: "Akshat Bhatia",
   title: "Full Stack & AI Engineer",
   tagline:
-    "Building scalable AI systems, high-performance backend infrastructure, and modern full-stack products for fast-moving startups and real-world users.",
-  about: `I’m a full-stack and AI engineer passionate about building products that are both technically strong and practical in the real world. My experience includes developing production AI systems, scalable backend infrastructure, data-intensive platforms, and fast-moving startup products. I enjoy working on challenging engineering problems — from designing intelligent workflows and optimizing system performance to shipping products quickly without compromising scalability or user experience.`,
+    "I build agentic systems and data infrastructure for industries where getting it wrong isn't an option.",
+  about: `Full-stack engineer who ended up deep in compliance infrastructure and agentic systems. At OnFinance AI I built the product end-to-end — dashboards, APIs, MongoDB pipelines, and an AI agent layer serving clients like BSE, Navi, and ICICI.
+  I like working on the hard parts: the 4.5-minute query that needs to be 15 seconds, the agent that needs to flag violations before it replies, the MVP that needs to ship in 10 days. That's where I do my best work.
+  Currently looking for what's next — especially teams building at the edge of AI and regulated industries.`,
   location: "Faridabad, HR, India",
   email: "hi@akshat-bhatia.com",
   linkedin: "https://www.linkedin.com/in/akshat-bhatia-",
